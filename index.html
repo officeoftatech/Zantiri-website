@@ -3,51 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zantiri Africa | Professional Portfolio</title>
+    <title>Zantiri Africa | Strategic Digital Infrastructure</title>
     <style>
-        /* Professional Styling */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: #333; }
-        nav { background: #2c3e50; color: #fff; padding: 1rem; text-align: center; position: sticky; top: 0; }
-        .hero { background: #f4f4f4; padding: 100px 20px; text-align: center; }
-        .hero h1 { margin: 0; font-size: 3rem; color: #2c3e50; }
-        .container { max-width: 1100px; margin: auto; padding: 20px; }
-        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
-        .project-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; transition: 0.3s; }
-        .project-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        footer { background: #2c3e50; color: #fff; text-align: center; padding: 2rem; margin-top: 40px; }
+        /* Base Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation */
+        nav {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000') no-repeat center center/cover;
+            height: 60vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+        }
+
+        /* Project Grid */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #1a1a1a;
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <strong>Zantiri Africa</strong>
+        <div class="logo">ZANTIRI AFRICA</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <header class="hero">
-        <h1>Welcome to Zantiri Africa</h1>
-        <p>Professional Solutions & Project Management</p>
+        <h1>Building Bridges Across Borders</h1>
+        <p>Driving strategic trade partnerships, sports management, and creative exports through digital excellence.</p>
     </header>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Providing top-tier professional services across the continent.</p>
-        </section>
-
+    <main class="container">
         <section id="projects">
-            <h2>Our Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>Details about the first major initiative.</p>
+            <div class="section-title">
+                <h2>Our Strategic Initiatives</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Unity Cup 2026</h3>
+                    <p>Managing the global sports and cultural exchange event connecting Africa, the Caribbean, and Asia.</p>
                 </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>Details about the second major initiative.</p>
+                <div class="card">
+                    <h3>South-South Trade</h3>
+                    <p>Facilitating industrial and financial partnerships within emerging markets.</p>
+                </div>
+                <div class="card">
+                    <h3>Creative Exports</h3>
+                    <p>Empowering African creative talent through structured digital platforms and global outreach.</p>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
     <footer>
         <p>&copy; 2026 Zantiri Africa. All Rights Reserved.</p>
