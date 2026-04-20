@@ -3,165 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zantiri Africa | Strategic Digital Infrastructure</title>
-    <style>
-        /* Base Styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-
-        /* Navigation */
-        nav {
-            background: #1a1a1a;
-            color: #fff;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-        }
-
-        .nav-links li {
-            margin-left: 20px;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #ffcc00;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000') no-repeat center center/cover;
-            height: 60vh;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-        }
-
-        /* Project Grid */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 2rem auto;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            color: #1a1a1a;
-            margin-top: 0;
-        }
-
-        /* Footer */
-        footer {
-            background: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-    </style>
+    <title>Zantiri Africa | Strategic Global Partnerships</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">ZANTIRI AFRICA</div>
+    <nav class="navbar">
+        <div class="logo">ZANTIRI <span>AFRICA</span></div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#countdown">Event</a></li>
+            <li><a href="#initiatives">Initiatives</a></li>
+            <li><a href="#contact" class="btn-contact">Get In Touch</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
-        <h1>Building Bridges Across Borders</h1>
-        <p>Driving strategic trade partnerships, sports management, and creative exports through digital excellence.</p>
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Unified Strategy for Global Growth</h1>
+            <p>Driving the Unity Cup 2026 and South-South industrial partnerships.</p>
+            <a href="#initiatives" class="cta-button">Explore Projects</a>
+        </div>
     </header>
 
-    <main class="container">
-        <section id="projects">
-            <div class="section-title">
-                <h2>Our Strategic Initiatives</h2>
+    <section id="countdown" class="countdown-section">
+        <h2>Unity Cup 2026 Begins In:</h2>
+        <div id="timer">
+            <div class="time-box"><span id="days">00</span><p>Days</p></div>
+            <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+            <div class="time-box"><span id="minutes">00</span><p>Minutes</p></div>
+            <div class="time-box"><span id="seconds">00</span><p>Seconds</p></div>
+        </div>
+    </section>
+
+    <section id="initiatives" class="container">
+        <h2 class="section-title">Core Focus Areas</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Unity Cup 2026</h3>
+                <p>Strategic management of the premier sports event connecting Africa, Caribbean, and Asian markets.</p>
             </div>
-            <div class="grid">
-                <div class="card">
-                    <h3>Unity Cup 2026</h3>
-                    <p>Managing the global sports and cultural exchange event connecting Africa, the Caribbean, and Asia.</p>
-                </div>
-                <div class="card">
-                    <h3>South-South Trade</h3>
-                    <p>Facilitating industrial and financial partnerships within emerging markets.</p>
-                </div>
-                <div class="card">
-                    <h3>Creative Exports</h3>
-                    <p>Empowering African creative talent through structured digital platforms and global outreach.</p>
-                </div>
+            <div class="project-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Strategic Trade</h3>
+                <p>Facilitating cross-border partnerships with global financial institutions.</p>
             </div>
-        </section>
-    </main>
+            <div class="project-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Creative Exports</h3>
+                <p>Scaling African creative talent and industrial output to a global audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Partner With Us</h2>
+            <form id="partnerForm" class="contact-form">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <select name="interest">
+                    <option value="partnership">Strategic Partnership</option>
+                    <option value="unity-cup">Unity Cup 2026</option>
+                    <option value="investment">Investment Inquiry</option>
+                </select>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2026 Zantiri Africa. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
